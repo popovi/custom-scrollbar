@@ -1,0 +1,35 @@
+.actionButton {
+    font-size: 1em;
+    padding: 0.2em;
+    background-color: #e6e6e6;
+    border-radius: 0.1em;
+    border: thin solid #cccccc;
+    outline: none;
+
+    &.clicked {
+        animation: animationButton_clicked 300ms ease-out;
+    }
+
+    & IMG{
+        height: 1em;
+        display: block;
+    }
+}
+
+/* Свойства на кастомизацию скролбара */
+.scrollbar--custom {
+    background-color: #dedbe3;
+    width: 0.2em;
+}
+
+.scrollbar__thumb-container__thumb--colored {
+    background-color: #5d536c;
+}
+/**/
+
+@keyframes animationButton_clicked {
+    20% {
+        background-color: #cccccc;
+        border: thin solid #b3b3b3;
+    }
+}

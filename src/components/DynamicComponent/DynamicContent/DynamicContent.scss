@@ -1,0 +1,22 @@
+.scrollableItem {
+    border: medium solid #3e3748;
+    border-radius: 0.2em;
+    margin: 0.5em 0;
+    padding: 0.5em;
+    width: 15em;
+    height: 80vh;
+    outline: none;
+    overflow: auto;
+    position: relative;
+
+    & .dataRow {
+        padding: 1em;
+        text-align: center;
+        border: thin solid #cccccc;
+        border-top: none;
+    }
+    
+    & .dataRow:first-child {
+        border-top: thin solid #cccccc;
+    }
+}

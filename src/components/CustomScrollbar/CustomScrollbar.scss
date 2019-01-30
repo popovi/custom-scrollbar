@@ -1,0 +1,38 @@
+.scrollable-contentainer {
+    padding: 0;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+}
+
+.scrollbar {
+    background-color: #e6e6e6;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 16px;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    opacity: 0.8;
+    transition: opacity 200ms linear;
+
+    &.active{
+        opacity: 1;
+    }
+}
+
+.scrollbar__thumb-container {
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.scrollbar__thumb-container__thumb {
+    background-color: #666666;
+    width: 70%;
+    border-radius: 0.1em
+}
